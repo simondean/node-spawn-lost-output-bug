@@ -1,0 +1,9 @@
+#!/usr/bin/env node
+
+console.log("Hello, world!");
+
+var code = 0;
+
+process.on('exit', function() {
+  process.exit(code);
+});

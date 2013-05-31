@@ -1,0 +1,18 @@
+#!/usr/bin/env node
+
+console.log("Hello, world!");
+
+var waitingIO = false;
+process.stdout.on('drain', function() {
+  if (waitingIO) {
+    // the kernel buffer is now empty
+    process.exit(0);
+  }
+});
+if (process.stdout.write("")) {
+  // no buffer left, exit now:
+  process.exit(0);
+} else {
+  // write() returned false, kernel buffer is not empty yet...
+  waitingIO = true;
+}

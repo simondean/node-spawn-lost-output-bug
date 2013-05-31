@@ -1,6 +1,9 @@
 var ChildProcess = require('child_process');
 
-child = ChildProcess.spawn('node', ['bin/console'], {
+var bin = process.argv.length > 2 ? process.argv[2] : 'bin/console';
+console.log('spawning ' + bin);
+
+child = ChildProcess.spawn('node', [bin], {
   cwd: '.',
   stdio: ['ignore', 'pipe', process.stderr],
   env: process.env
