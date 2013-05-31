@@ -3,7 +3,6 @@
     "node": ">=0.6"
   },
   "dependencies": {
-    "debug": "~0.7.2",
     "win-spawn": "~1.1.2",
     "websocket-driver": "~0.2.1"
   },
