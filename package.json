@@ -1,0 +1,19 @@
+{
+  "engines": {
+    "node": ">=0.6"
+  },
+  "dependencies": {
+    "debug": "~0.7.2",
+    "win-spawn": "~1.1.2",
+    "websocket-driver": "~0.2.1"
+  },
+  "devDependencies": {
+    "cucumber": "~0.3.0"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/simondean/myriad-server/LICENSE"
+    }
+  ]
+}
