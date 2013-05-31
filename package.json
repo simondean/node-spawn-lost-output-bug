@@ -2,10 +2,7 @@
   "engines": {
     "node": ">=0.6"
   },
-  "dependencies": {
-    "win-spawn": "~1.1.2",
-    "websocket-driver": "~0.2.1"
-  },
+  "dependencies": {},
   "devDependencies": {
     "cucumber": "~0.3.0"
   },
